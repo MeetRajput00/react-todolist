@@ -48,5 +48,20 @@ button {
     color: white;
     background: #61ff81;
     text-decoration: none;
+    cursor: pointer;
   }
-  
+
+.actualList{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.4px;
+    color: #FF7B9C;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-top: 5%;
+    margin-left: 20%;
+}

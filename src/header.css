@@ -1,0 +1,26 @@
+.navBar{
+    background-color: #FFC759;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    border-radius: 42px;
+    height: 60px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    display: flex;
+    letter-spacing: 1.8px;
+    word-spacing: 2.2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+.navBar .date{
+    margin: auto;
+    float: left;
+}
+.navBar .time{
+    margin: auto;
+    float: right;
+}

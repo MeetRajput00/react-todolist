@@ -28,7 +28,7 @@ input {
 input:focus {
     outline:none;
 }
-button {
+.main_div .center_div .btn {
     -webkit-border-radius: 29;
     -moz-border-radius: 29;
     border-radius: 29px;
@@ -44,7 +44,7 @@ button {
     text-decoration: none;
   }
   
-  button:hover {
+.main_div .center_div .btn:hover {
     color: white;
     background: #61ff81;
     text-decoration: none;

@@ -13,15 +13,9 @@ function App() {
       return [...oldItems, item];
     })};
   }
-  const deleteItem = (id) => {
-    // console.log('deleted');
-    const updatedItems = itemList.filter((elem) => {
-        console.log("deleteItem(id)=="+id);
-        console.log("elem.id=="+elem.id);
-        return elem.id !== id;
-    });
-    setItemList(updatedItems);
-}
+  const deleteItems=()=>{
+    setItemList([]);
+  }
   return (
     <div>
       <div className="main_div">
@@ -30,6 +24,7 @@ function App() {
           <Header/>
           <input id="mainInput"onChange={addItem}type="text"placeholder='Enter item...'/>
           <button className="btn" onClick={listOfItems}>+</button>
+          <button className="removebtn"onClick={deleteItems}>x</button>
           <div className='actualList'>
             <ol>
               {
@@ -37,7 +32,7 @@ function App() {
                   console.log("itemVal.id=="+itemVal.id);
                   return(
                     <div key={itemVal.id} id={itemVal.id}>
-                      <li>{itemVal}</li><button onClick={()=>deleteItem(itemVal.id)}>x</button>
+                      <li>{itemVal}</li>
                     </div>
                   );
                 })

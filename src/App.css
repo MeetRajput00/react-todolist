@@ -11,8 +11,8 @@
 }
 input {
     width: 300px;
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-top: 8%;
+    margin-left: 10%;
     margin-right: 5%;
     padding: 6px;
     font-size: 18px;
@@ -50,7 +50,29 @@ input:focus {
     text-decoration: none;
     cursor: pointer;
   }
-
+  .main_div .center_div .removebtn {
+      margin-left: 5%;
+    -webkit-border-radius: 29;
+    -moz-border-radius: 29;
+    border-radius: 29px;
+    -webkit-box-shadow: 3px 2px 5px #d6cfd6;
+    -moz-box-shadow: 3px 2px 5px #d6cfd6;
+    box-shadow: 3px 2px 5px #d6cfd6;
+    font-family: Arial;
+    color: #000000;
+    font-size: 29px;
+    background: #ffffff;
+    padding: 0px 22px 0px 22px;
+    border: solid #ffffff 0px;
+    text-decoration: none;
+  }
+  
+.main_div .center_div .removebtn:hover {
+    color: white;
+    background: #e9231c;
+    text-decoration: none;
+    cursor: pointer;
+  }
 .actualList{
     font-family: "Courier New", Courier, monospace;
     font-size: 24px;

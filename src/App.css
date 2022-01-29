@@ -65,3 +65,33 @@ input:focus {
     margin-top: 5%;
     margin-left: 20%;
 }
+.actualList ol li{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 10%;
+    display: inline;
+}
+.actualList ol button{
+    margin-right: 15%;
+    float: right;
+    -webkit-border-radius: 59;
+    -moz-border-radius: 59;
+    border-radius: 59px;
+    -webkit-box-shadow: 1px 2px 3px #666666;
+    -moz-box-shadow: 1px 2px 3px #666666;
+    box-shadow: 1px 2px 3px #666666;
+    font-family: Arial;
+    color: #d60000;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 0px 8px 0px 11px;
+    border: solid #ffffff 0px;
+    text-decoration: none;
+}
+.actualList ol button:hover{
+    background: #ff0000;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

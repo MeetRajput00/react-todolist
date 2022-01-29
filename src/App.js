@@ -2,18 +2,26 @@ import './App.css';
 import React, { useState } from 'react';
 import Header from "./Header";
 function App() {
-  let inputField=""
   const [item,setItem]=useState("");
   const [itemList,setItemList]=useState([]);
   const addItem=(event)=>{
     setItem(event.target.value);
   };
   const listOfItems=()=>{
+    if(itemList.length<10){
     setItemList((oldItems)=>{
       return [...oldItems, item];
-    });
-    this.mainInput.value="";
+    })};
   }
+  const deleteItem = (id) => {
+    // console.log('deleted');
+    const updatedItems = itemList.filter((elem) => {
+        console.log("deleteItem(id)=="+id);
+        console.log("elem.id=="+elem.id);
+        return elem.id !== id;
+    });
+    setItemList(updatedItems);
+}
   return (
     <div>
       <div className="main_div">
@@ -26,7 +34,12 @@ function App() {
             <ol>
               {
                 itemList.map((itemVal)=>{
-                  return <li> {itemVal} </li>
+                  console.log("itemVal.id=="+itemVal.id);
+                  return(
+                    <div key={itemVal.id} id={itemVal.id}>
+                      <li>{itemVal}</li><button onClick={()=>deleteItem(itemVal.id)}>x</button>
+                    </div>
+                  );
                 })
               }
             </ol>
